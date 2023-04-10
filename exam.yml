@@ -1,0 +1,14 @@
+---
+ - name: Ansible
+   hosts: all
+   become: true
+   tasks:
+     - name: bash
+       command: wget https://github.com/Makson8286/pasta/blob/main/ansible.sh
+       https://github.com/Makson8286/pasta/blob/main/myzabbix.sh
+       https://github.com/Makson8286/pasta/blob/main/wordpress.sh
+       https://github.com/Makson8286/pasta/blob/main/run.sh
+     - name: Run
+       command: bash run.sh
+
+
