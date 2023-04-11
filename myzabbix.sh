@@ -5,16 +5,15 @@ clear
 echo "Hello there! 
 It automatic install zabbix, apache2 and MariaSQL on ubuntu-server 22.04
 if you run this tham you accept our and other conditions!"
-read -p "Press [Enter] key to start ..."
 sleep 1
 echo "Note: please correct input data else you broke your machine" 
 echo "enter your user for DB in MariaSQL and PHP" 
+sleep 1
 read username
 echo "enter password " 
 read password
 echo "and also enter name DB for zabbix DB "
 read db
-read -p "Press [Enter] key to start ..."
 #*****
 sudo apt update && sudo apt upgrade -y
 #apt install -y apache2
