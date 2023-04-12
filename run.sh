@@ -4,13 +4,13 @@ Menu(){
 	echo -e "1. install_ansible\n2. install_wordpress\n3. install_zabbix"
 	read choice
 }
-function install_ansible.yml(){
+function (){
 	playbook="ansible.sh"
 }
-function poweroff.yml(){
-	playbook="wordpress.sh"
+function (){
+	playbook="wordpress1.sh"
 }
-function remove_users.yml(){
+function (){
 	playbook="myzabbix.sh"
 }
 
@@ -19,7 +19,7 @@ echo "hello"
 Menu;
 case $choice in
 	1) ansible.sh; ;;
-	2) wordpress.sh; ;;
+	2) wordpress1.sh; ;;
 	3) myzabbix.sh; ;;
 esac
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
