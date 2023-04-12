@@ -26,6 +26,7 @@ esac
 cd /home/ubuntu/
 
 read -p "Enter class: " class
+bash $class /home/ubuntu/pasta/
 
 Menu1(){
 	echo -e "1. сайт кулінарії\n2. сайт IT"
@@ -48,3 +49,4 @@ esac
 read -p "Enter class: " class1
 
 cd /home/ubuntu/
+bash $class1 /home/ubuntu/pasta/
