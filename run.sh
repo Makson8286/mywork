@@ -11,7 +11,7 @@ function (){
 	playbook="wordpress1.sh"
 }
 function (){
-	playbook="myzabbix.sh"
+	playbook="zab.sh"
 }
 
 clear
@@ -20,7 +20,7 @@ Menu;
 case $choice in
 	1) ansible.sh; ;;
 	2) wordpress1.sh; ;;
-	3) myzabbix.sh; ;;
+	3) zab.sh; ;;
 esac
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
