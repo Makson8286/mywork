@@ -4,13 +4,13 @@ Menu(){
 	echo -e "1. install_ansible\n2. install_wordpress\n3. install_zabbix"
 	read choice
 }
-function (){
+function ansible.sh (){
 	playbook="ansible.sh"
 }
-function (){
+function wordpress1.sh (){
 	playbook="wordpress1.sh"
 }
-function (){
+function zab.sh (){
 	playbook="zab.sh"
 }
 
@@ -31,10 +31,10 @@ Menu(){
 	echo -e "1. сайт кулінарії\n2. сайт IT"
 	read choice
 }
-function (){
+function 1.sh (){
 	playbook="1.sh"
 }
-function (){
+function 2.sh (){
 	playbook="2.sh"
 }
 
