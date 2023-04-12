@@ -17,7 +17,7 @@ username="wp"
 password="wp"
 wp="wp"
 
-apt -y update
+apt update -y
 
 
 
