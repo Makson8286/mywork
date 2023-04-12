@@ -5,16 +5,11 @@ clear
 echo "Hello there! 
 It automatic install zabbix, apache2 and MariaSQL on ubuntu-server 22.04
 if you run this tham you accept our and other conditions!"
-read -p "Press [Enter] key to start ..."
 sleep 1
-echo "Note: please correct input data else you broke your machine" 
-echo "enter your user for DB in MariaSQL and PHP" 
-read username
-echo "enter password " 
-read password
-echo "and also enter name DB for zabbix DB "
-read db
-read -p "Press [Enter] key to start ..."
+
+username="wp"
+password="wp"
+wp="wp"
 #*****
 sudo apt update && sudo apt upgrade -y
 #apt install -y apache2
@@ -31,12 +26,12 @@ wget https://repo.zabbix.com/zabbix/6.2/ubuntu/pool/main/z/zabbix-release/zabbix
 #sudo dpkg -i zabbix-release_6.0-3+ubuntu$(lsb_release -rs)_all.deb
 sudo dpkg -i zabbix-release_6.2-4+ubuntu22.04_all.deb
 
-sudo apt update
+sudo apt update -y
 sudo apt -y install zabbix-server-mysql zabbix-frontend-php zabbix-apache-conf zabbix-sql-scripts zabbix-agent
 sudo apt install software-properties-common -y
 curl -LsS -O https://downloads.mariadb.com/MariaDB/mariadb_repo_setup
 sudo bash mariadb_repo_setup --mariadb-server-version=10.6
-sudo apt update
+sudo apt update -y
 sudo apt -y install mariadb-common mariadb-server-10.6 mariadb-client-10.6
 sudo systemctl start mariadb
 sudo systemctl enable mariadb
@@ -46,7 +41,7 @@ sudo systemctl enable mariadb
 #************SQL setting
 mysql -u root -p -e "CREATE USER '$username'@'localhost' IDENTIFIED BY '$password';"
 mysql -u root -p -e "GRANT ALL PRIVILEGES ON *.* TO '$username'@'localhost';"
-mysql -u root -p -e "CREATE DATABASE $db;"
+mysql -u root -p -e "CREATE DATABASE $wp;"
 mysql -u root -p -e "FLUSH PRIVILEGES;"
 mysql -u root -p -e "set global log_bin_trust_function_creators = 1;"
 #*****************************************
