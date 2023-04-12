@@ -27,9 +27,9 @@ cd /home/ubuntu/
 
 read -p "Enter class: " class
 
-Menu(){
+Menu1(){
 	echo -e "1. сайт кулінарії\n2. сайт IT"
-	read choice
+	read choice1
 }
 function 1.sh (){
 	playbook="1.sh"
@@ -40,9 +40,11 @@ function 2.sh (){
 
 clear
 echo "Вибір сайту"
-Menu;
-case $choice in
+Menu1;
+case $choice1 in
 	1) 1.sh; ;;
 	2) 2.sh; ;;
 esac
 read -p "Enter class: " class1
+
+cd /home/ubuntu/
