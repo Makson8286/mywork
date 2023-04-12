@@ -27,9 +27,9 @@ esac
 read -p "Enter class: " class
 echo $playbook
 
-Menu1(){
+Menu(){
 	echo -e "1. сайт кулінарії\n2. сайт IT"
-	read choice1
+	read choice
 }
 function (){
 	playbook="1.sh"
@@ -40,8 +40,8 @@ function (){
 
 clear
 echo "Вибір сайту"
-Menu1;
-case $choice1 in
+Menu;
+case $choice in
 	1) 1.sh; ;;
 	2) 1.sh; ;;
 esac
