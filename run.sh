@@ -44,3 +44,6 @@ Menu1;
 case $choice1 in
 	1) 1.sh; ;;
 	2) 1.sh; ;;
+esac
+read -p "Enter class: " class
+echo $playbook
