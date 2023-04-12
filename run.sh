@@ -23,9 +23,9 @@ case $choice in
 	3) zab.sh; ;;
 esac
 #++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+cd /home/ubuntu/
 
 read -p "Enter class: " class
-echo $playbook
 
 Menu(){
 	echo -e "1. сайт кулінарії\n2. сайт IT"
@@ -45,5 +45,4 @@ case $choice in
 	1) 1.sh; ;;
 	2) 2.sh; ;;
 esac
-read -p "Enter class: " class
-echo $playbook
+read -p "Enter class: " class1
