@@ -23,11 +23,11 @@ case $choice in
 	3) zab.sh; ;;
 esac
 #++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-cd /home/ubuntu/pasta/
+cd /home/test/pasta/
 
 read -p "Enter class: " class
 echo $bash
-bash $class /home/ubuntu/pasta/$bash
+bash $class /home/test/pasta/$bash
 
 Menu1(){
 	echo -e "1. сайт кулінарії\n2. сайт IT"
@@ -47,8 +47,8 @@ case $choice1 in
 	1) 1.sh; ;;
 	2) 2.sh; ;;
 esac
-cd /home/ubuntu/pasta/
+cd /home/test/pasta/
 read -p "Enter class: " room
 
 echo $bash
-bash $room /home/ubuntu/pasta/$bash
+bash $room /home/test/pasta/$bash
