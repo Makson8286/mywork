@@ -44,10 +44,10 @@ systemctl restart apache2
 
 #mysql_secure_installation
 
-mysql -u root -p -e "CREATE USER '$username'@'localhost' IDENTIFIED BY '$password';"
-mysql -u root -p -e "GRANT ALL PRIVILEGES ON *.* TO '$username'@'localhost';"
-mysql -u root -p -e "CREATE DATABASE $wp;"
-mysql -u root -p -e "FLUSH PRIVILEGES;"
+#mysql -u root -p -e "CREATE USER '$username'@'localhost' IDENTIFIED BY '$password';"
+#mysql -u root -p -e "GRANT ALL PRIVILEGES ON *.* TO '$username'@'localhost';"
+#mysql -u root -p -e "CREATE DATABASE $wp;"
+#mysql -u root -p -e "FLUSH PRIVILEGES;"
 
 #echo "http://your_IPaddress/phpmyadmin/"
 #echo "Create MySql User"
