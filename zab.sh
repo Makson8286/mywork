@@ -1,6 +1,7 @@
 #! /bin/bash
 clear
 
+#start up
 echo "Hello there! 
 It automatic install zabbix, apache2 and MariaSQL on ubuntu-server 22.04
 if you run this tham you accept our and other conditions!"
