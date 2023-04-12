@@ -43,7 +43,7 @@ echo "Вибір сайту"
 Menu;
 case $choice in
 	1) 1.sh; ;;
-	2) 1.sh; ;;
+	2) 2.sh; ;;
 esac
 read -p "Enter class: " class
 echo $playbook
