@@ -26,8 +26,6 @@ esac
 cd /home/test/pasta/
 
 read -p "Enter class: " class
-echo $bash
-bash $class /home/test/pasta/$bash
 
 Menu1(){
 	echo -e "1. сайт кулінарії\n2. сайт IT"
@@ -50,5 +48,4 @@ esac
 cd /home/test/pasta/
 read -p "Enter class: " room
 
-echo $bash
-bash $room /home/test/pasta/$bash
+
