@@ -23,7 +23,7 @@ case $choice in
 	3) zab.sh; ;;
 esac
 #++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-cd /home/ubuntu/
+cd /home/ubuntu/pasta/
 
 read -p "Enter class: " class
 echo $bash
@@ -47,8 +47,8 @@ case $choice1 in
 	1) 1.sh; ;;
 	2) 2.sh; ;;
 esac
-cd /home/ubuntu/
-read -p "Enter class: " class1
+cd /home/ubuntu/pasta/
+read -p "Enter class: " room
 
 echo $bash
-bash $class1 /home/ubuntu/pasta/$bash
+bash $room /home/ubuntu/pasta/$bash
