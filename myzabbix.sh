@@ -1,7 +1,6 @@
 #! /bin/bash
 clear
 
-#*******start menu
 echo "Hello there! 
 It automatic install zabbix, apache2 and MariaSQL on ubuntu-server 22.04
 if you run this tham you accept our and other conditions!"
@@ -57,7 +56,7 @@ mysql -u root -p -e "set global log_bin_trust_function_creators = 0;"
 #*****zabbix conf
 
 
-sed -i "s/DBName=.*/DBName=${db}/" /etc/zabbix/zabbix_server.conf
+sed -i "s/DBName=.*/DBName=${wp}/" /etc/zabbix/zabbix_server.conf
 sed -i "s/DBUser=.*/DBUser=${username}/" /etc/zabbix/zabbix_server.conf
 sed -i "s/#\s*DBPassword=.*/DBPassword=${password}/" /etc/zabbix/zabbix_server.conf
 #********************
