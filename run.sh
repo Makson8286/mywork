@@ -1,51 +1,49 @@
 #! /bin/bash
 
 Menu(){
-	echo -e "1. install_ansible\n2. install_wordpress\n3. install_zabbix"
-	read choice
+        echo -e "1. install_ansible\n2. install_wordpress\n3. install_zabbix"
+        read choice
+        case $choice in
+                1) bash="ansible.sh"; ;;
+                2) bash="wordpress1.sh"; ;;
+                3) bash="zab.sh"; ;;
+        esac
 }
-function ansible.sh(){
-	bash="ansible.sh"
+function ansible_sh(){
+        bash="ansible.sh"
 }
-function wordpress1.sh(){
-	bash="wordpress1.sh"
+function wordpress1_sh(){
+        bash="wordpress1.sh"
 }
-function zab.sh(){
-	bash="zab.sh"
+function zab_sh(){
+        bash="zab.sh"
 }
 
 clear
 echo "Вибір завантаження"
 Menu;
-case $choice in
-	1) ansible.sh; ;;
-	2) wordpress1.sh; ;;
-	3) zab.sh; ;;
-esac
+bash /home/test/pasta/$bash
 #++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-cd /home/test/pasta/
-
-read -p "Enter class: " class
 
 Menu1(){
-	echo -e "1. сайт кулінарії\n2. сайт IT"
-	read choice1
+        echo -e "1. сайт кулінарії\n2. сайт IT"
+        read choice1
+        case $choice1 in
+                1) bash="1.sh"; ;;
+                2) bash="2.sh"; ;;
+        esac
 }
-function 1.sh(){
-	bash="1.sh"
+function 1_sh(){
+        bash1="1.sh"
 }
-function 2.sh(){
-	bash="2.sh"
+function 2_sh(){
+        bash1="2.sh"
 }
 
 clear
 echo "Вибір сайту"
 Menu1;
-case $choice1 in
-	1) 1.sh; ;;
-	2) 2.sh; ;;
-esac
-cd /home/test/pasta/
+
 read -p "Enter class: " room
 
-
+bash /home/test/pasta/$bash1
