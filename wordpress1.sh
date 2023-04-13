@@ -78,6 +78,7 @@ if [ -f /var/www/html/wp-config.php ]; then
 	http://your_server_adresess
 	"
 	echo "Note: For registration use your data " $username $password $wp
+	echo -p "Press Enter"
   rm ins.sh $HOME_DIR
   #rm "$0"
 else
