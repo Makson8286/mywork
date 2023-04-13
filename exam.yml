@@ -6,11 +6,6 @@
      - name: git
        command: sudo apt install git
      - name: bash
-       command: git clone https://github.com/Makson8286/pasta/blob/main/ansible.sh
-       https://github.com/Makson8286/pasta/blob/main/zab.sh
-       https://github.com/Makson8286/pasta/blob/main/wordpress1.sh
-       https://github.com/Makson8286/pasta/blob/main/run.sh
-     - name: Run
-       command: bash run.sh
-
+       command: git clone https://github.com/Makson8286/pasta
+             
 
