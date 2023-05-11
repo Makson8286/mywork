@@ -1,0 +1,24 @@
+version: '3'
+networks:
+  wordpress-net:
+    driver: bridge
+services:
+  mariadb:
+   image: mariadb
+   networks:
+    - wordpress-net
+   environment:
+    - MYSQL_ROOT_PASSWORD=password
+    - MYSQL_DATABASE=wordpress
+   volumes:
+    - ./database:/var/lib/mysql
+
+  web:
+    image: tomcat
+    container_name: tomcat-container
+    networks:
+     - wordpress-net
+    volumes:
+      - ./index.html:/usr/local/tomcat/webapps/test/index.html
+    ports:
+      - "8080:8080"
