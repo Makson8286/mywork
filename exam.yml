@@ -6,6 +6,6 @@
      - name: git
        command: sudo apt install git
      - name: bash
-       command: git clone https://github.com/Makson8286/pasta
+       command: git clone https://github.com/Makson8286/mywork
              
 
