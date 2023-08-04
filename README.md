@@ -1,2 +1,0 @@
-# pasta
-Nothink airphone
