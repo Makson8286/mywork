@@ -22,7 +22,7 @@ function zab_sh(){
 clear
 echo "Вибір завантаження"
 Menu;
-bash /home/test/pasta/$bash
+bash /home/test/mywork/$bash
 #++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 Menu1(){
@@ -46,4 +46,4 @@ Menu1;
 
 read -p "Enter class: " room
 
-bash /home/test/pasta/$bash1
+bash /home/test/mywork/$bash1
