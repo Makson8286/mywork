@@ -23,7 +23,7 @@ pipeline  {
         stage("Build") {
             steps {
                 sh '''
-                cd /your-path/jenkins-install-ansible/Ansible
+                cd /your-path/jenkins-install-ansible/Docker
                 docker build -t makson8286/ansible .
                 '''
             }
