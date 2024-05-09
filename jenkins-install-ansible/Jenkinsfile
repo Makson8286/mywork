@@ -1,0 +1,41 @@
+#!groovy
+//  groovy Jenkinsfile
+properties([disableConcurrentBuilds()])\
+
+pipeline  {
+        agent { 
+           label ''
+        }
+
+    options {
+        buildDiscarder(logRotator(numToKeepStr: '10', artifactNumToKeepStr: '10'))
+        timestamps()
+    }
+    stages {
+        stage("Git clone") {
+            steps {
+                sh '''
+                cd /your-path/
+                git clone https://github.com/Makson8286/mywork/jenkins-install-ansible      
+                '''
+            }
+        }    
+        stage("Build") {
+            steps {
+                sh '''
+                cd /your-path/jenkins-install-ansible/Ansible
+                docker build -t makson8286/ansible .
+                '''
+            }
+        } 
+        stage("Start") {
+            steps {
+                sh '''
+                docker run \
+                --name ansible \
+                -d makson8286/ansible
+                '''
+            }
+        }
+    }
+}
