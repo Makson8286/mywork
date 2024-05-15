@@ -6,6 +6,6 @@ echo deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc] \
 sudo apt-get update
 sudo apt-get install fontconfig openjdk-17-jre -y
 sudo apt-get install jenkins -y
-usermod -aG docker jenkins
 systemctl restart jenkins
+usermod -aG docker jenkins
 service jenkins restart
